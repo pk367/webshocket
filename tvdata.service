@@ -1,0 +1,15 @@
+[Unit]
+Description=TradingView Data API Service
+After=network.target
+
+[Service]
+User=your_username
+Group=your_username
+WorkingDirectory=/var/www/tvdata-api
+Environment="PATH=/var/www/tvdata-api/venv/bin"
+ExecStart=/var/www/tvdata-api/venv/bin/uvicorn api_server:app --host 0.0.0.0 --port 8000 --workers 4
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target 

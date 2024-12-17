@@ -1,0 +1,1748 @@
+
+    <html>
+    <head>
+        <title>TradingView Data API Test Report</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            .success { color: green; }
+            .error { color: red; }
+            .no_data { color: orange; }
+        </style>
+    </head>
+    <body>
+    
+    <h1>TradingView Data API Test Report</h1>
+    <p>Generated on: 2024-12-18 01:43:09</p>
+    <h2>Success Rates by Category</h2>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>status</th>
+    </tr>
+    <tr>
+      <th>category</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Binance Crypto</th>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <th>COMEX Futures</th>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <th>Coinbase Crypto</th>
+      <td>80.0</td>
+    </tr>
+    <tr>
+      <th>Indian Futures</th>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <th>Indian Indices</th>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <th>Indian Stocks</th>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <th>MCX Commodities</th>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <th>NYMEX Futures</th>
+      <td>100.0</td>
+    </tr>
+  </tbody>
+</table>
+    
+    <h2>Success Rates by Exchange</h2>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>status</th>
+    </tr>
+    <tr>
+      <th>exchange</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>BINANCE</th>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <th>BSE</th>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <th>COINBASE</th>
+      <td>80.0</td>
+    </tr>
+    <tr>
+      <th>COMEX</th>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <th>MCX</th>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <th>NSE</th>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <th>NYMEX</th>
+      <td>100.0</td>
+    </tr>
+  </tbody>
+</table>
+    
+    <h2>Detailed Results</h2>
+    <h3>Indian Indices</h3><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>symbol</th>
+      <th>exchange</th>
+      <th>interval</th>
+      <th>status</th>
+      <th>data_points</th>
+      <th>response_time</th>
+      <th>latest_time</th>
+      <th>category</th>
+      <th>error</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>NIFTY</td>
+      <td>NSE</td>
+      <td>in_1_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.226527</td>
+      <td>2024-12-17 15:29:00</td>
+      <td>Indian Indices</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>NIFTY</td>
+      <td>NSE</td>
+      <td>in_5_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.215261</td>
+      <td>2024-12-17 15:25:00</td>
+      <td>Indian Indices</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>NIFTY</td>
+      <td>NSE</td>
+      <td>in_15_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.323656</td>
+      <td>2024-12-17 15:15:00</td>
+      <td>Indian Indices</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>NIFTY</td>
+      <td>NSE</td>
+      <td>in_1_hour</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.186134</td>
+      <td>2024-12-17 15:15:00</td>
+      <td>Indian Indices</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>NIFTY</td>
+      <td>NSE</td>
+      <td>in_daily</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.188737</td>
+      <td>2024-12-17 09:15:00</td>
+      <td>Indian Indices</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>BANKNIFTY</td>
+      <td>NSE</td>
+      <td>in_1_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.322495</td>
+      <td>2024-12-17 15:29:00</td>
+      <td>Indian Indices</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>BANKNIFTY</td>
+      <td>NSE</td>
+      <td>in_5_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.224623</td>
+      <td>2024-12-17 15:25:00</td>
+      <td>Indian Indices</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>BANKNIFTY</td>
+      <td>NSE</td>
+      <td>in_15_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.217500</td>
+      <td>2024-12-17 15:15:00</td>
+      <td>Indian Indices</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>BANKNIFTY</td>
+      <td>NSE</td>
+      <td>in_1_hour</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.185318</td>
+      <td>2024-12-17 15:15:00</td>
+      <td>Indian Indices</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>BANKNIFTY</td>
+      <td>NSE</td>
+      <td>in_daily</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.187319</td>
+      <td>2024-12-17 09:15:00</td>
+      <td>Indian Indices</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>SENSEX</td>
+      <td>BSE</td>
+      <td>in_1_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.189145</td>
+      <td>2024-12-17 15:29:00</td>
+      <td>Indian Indices</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>SENSEX</td>
+      <td>BSE</td>
+      <td>in_5_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.197849</td>
+      <td>2024-12-17 15:25:00</td>
+      <td>Indian Indices</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>SENSEX</td>
+      <td>BSE</td>
+      <td>in_15_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.189652</td>
+      <td>2024-12-17 15:15:00</td>
+      <td>Indian Indices</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>SENSEX</td>
+      <td>BSE</td>
+      <td>in_1_hour</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.315778</td>
+      <td>2024-12-17 15:15:00</td>
+      <td>Indian Indices</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>SENSEX</td>
+      <td>BSE</td>
+      <td>in_daily</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.204371</td>
+      <td>2024-12-17 09:15:00</td>
+      <td>Indian Indices</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table><h3>Indian Stocks</h3><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>symbol</th>
+      <th>exchange</th>
+      <th>interval</th>
+      <th>status</th>
+      <th>data_points</th>
+      <th>response_time</th>
+      <th>latest_time</th>
+      <th>category</th>
+      <th>error</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>15</th>
+      <td>RELIANCE</td>
+      <td>NSE</td>
+      <td>in_1_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.455857</td>
+      <td>2024-12-17 15:29:00</td>
+      <td>Indian Stocks</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>RELIANCE</td>
+      <td>NSE</td>
+      <td>in_5_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.188291</td>
+      <td>2024-12-17 15:25:00</td>
+      <td>Indian Stocks</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>RELIANCE</td>
+      <td>NSE</td>
+      <td>in_15_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.191809</td>
+      <td>2024-12-17 15:15:00</td>
+      <td>Indian Stocks</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>RELIANCE</td>
+      <td>NSE</td>
+      <td>in_1_hour</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.505742</td>
+      <td>2024-12-17 15:15:00</td>
+      <td>Indian Stocks</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>RELIANCE</td>
+      <td>NSE</td>
+      <td>in_daily</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.266010</td>
+      <td>2024-12-17 09:15:00</td>
+      <td>Indian Stocks</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>TCS</td>
+      <td>NSE</td>
+      <td>in_1_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.505551</td>
+      <td>2024-12-17 15:29:00</td>
+      <td>Indian Stocks</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>TCS</td>
+      <td>NSE</td>
+      <td>in_5_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.256629</td>
+      <td>2024-12-17 15:25:00</td>
+      <td>Indian Stocks</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>TCS</td>
+      <td>NSE</td>
+      <td>in_15_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.476023</td>
+      <td>2024-12-17 15:15:00</td>
+      <td>Indian Stocks</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>TCS</td>
+      <td>NSE</td>
+      <td>in_1_hour</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.635378</td>
+      <td>2024-12-17 15:15:00</td>
+      <td>Indian Stocks</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>TCS</td>
+      <td>NSE</td>
+      <td>in_daily</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.200497</td>
+      <td>2024-12-17 09:15:00</td>
+      <td>Indian Stocks</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>HDFCBANK</td>
+      <td>NSE</td>
+      <td>in_1_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.477760</td>
+      <td>2024-12-17 15:29:00</td>
+      <td>Indian Stocks</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>HDFCBANK</td>
+      <td>NSE</td>
+      <td>in_5_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.259233</td>
+      <td>2024-12-17 15:25:00</td>
+      <td>Indian Stocks</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>HDFCBANK</td>
+      <td>NSE</td>
+      <td>in_15_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.277680</td>
+      <td>2024-12-17 15:15:00</td>
+      <td>Indian Stocks</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>HDFCBANK</td>
+      <td>NSE</td>
+      <td>in_1_hour</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.495659</td>
+      <td>2024-12-17 15:15:00</td>
+      <td>Indian Stocks</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>HDFCBANK</td>
+      <td>NSE</td>
+      <td>in_daily</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.184144</td>
+      <td>2024-12-17 09:15:00</td>
+      <td>Indian Stocks</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table><h3>Indian Futures</h3><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>symbol</th>
+      <th>exchange</th>
+      <th>interval</th>
+      <th>status</th>
+      <th>data_points</th>
+      <th>response_time</th>
+      <th>latest_time</th>
+      <th>category</th>
+      <th>error</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>30</th>
+      <td>NIFTY</td>
+      <td>NSE</td>
+      <td>in_1_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.223090</td>
+      <td>2024-12-17 15:29:00</td>
+      <td>Indian Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>NIFTY</td>
+      <td>NSE</td>
+      <td>in_5_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.211335</td>
+      <td>2024-12-17 15:25:00</td>
+      <td>Indian Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>NIFTY</td>
+      <td>NSE</td>
+      <td>in_15_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.764835</td>
+      <td>2024-12-17 15:15:00</td>
+      <td>Indian Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>NIFTY</td>
+      <td>NSE</td>
+      <td>in_1_hour</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.195907</td>
+      <td>2024-12-17 15:15:00</td>
+      <td>Indian Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>NIFTY</td>
+      <td>NSE</td>
+      <td>in_daily</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.420701</td>
+      <td>2024-12-17 09:15:00</td>
+      <td>Indian Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>BANKNIFTY</td>
+      <td>NSE</td>
+      <td>in_1_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.595033</td>
+      <td>2024-12-17 15:29:00</td>
+      <td>Indian Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>BANKNIFTY</td>
+      <td>NSE</td>
+      <td>in_5_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.218589</td>
+      <td>2024-12-17 15:25:00</td>
+      <td>Indian Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>BANKNIFTY</td>
+      <td>NSE</td>
+      <td>in_15_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>1.077750</td>
+      <td>2024-12-17 15:15:00</td>
+      <td>Indian Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>BANKNIFTY</td>
+      <td>NSE</td>
+      <td>in_1_hour</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.208323</td>
+      <td>2024-12-17 15:15:00</td>
+      <td>Indian Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>BANKNIFTY</td>
+      <td>NSE</td>
+      <td>in_daily</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.204152</td>
+      <td>2024-12-17 09:15:00</td>
+      <td>Indian Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>RELIANCE</td>
+      <td>NSE</td>
+      <td>in_1_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.654350</td>
+      <td>2024-12-17 15:29:00</td>
+      <td>Indian Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>RELIANCE</td>
+      <td>NSE</td>
+      <td>in_5_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.218671</td>
+      <td>2024-12-17 15:25:00</td>
+      <td>Indian Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>RELIANCE</td>
+      <td>NSE</td>
+      <td>in_15_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.818047</td>
+      <td>2024-12-17 15:15:00</td>
+      <td>Indian Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>RELIANCE</td>
+      <td>NSE</td>
+      <td>in_1_hour</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.208216</td>
+      <td>2024-12-17 15:15:00</td>
+      <td>Indian Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>RELIANCE</td>
+      <td>NSE</td>
+      <td>in_daily</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.299898</td>
+      <td>2024-12-17 09:15:00</td>
+      <td>Indian Futures</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table><h3>MCX Commodities</h3><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>symbol</th>
+      <th>exchange</th>
+      <th>interval</th>
+      <th>status</th>
+      <th>data_points</th>
+      <th>response_time</th>
+      <th>latest_time</th>
+      <th>category</th>
+      <th>error</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>45</th>
+      <td>GOLD</td>
+      <td>MCX</td>
+      <td>in_1_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.184993</td>
+      <td>2024-12-17 23:54:00</td>
+      <td>MCX Commodities</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>GOLD</td>
+      <td>MCX</td>
+      <td>in_5_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.189070</td>
+      <td>2024-12-17 23:50:00</td>
+      <td>MCX Commodities</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>GOLD</td>
+      <td>MCX</td>
+      <td>in_15_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.410466</td>
+      <td>2024-12-17 23:45:00</td>
+      <td>MCX Commodities</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>GOLD</td>
+      <td>MCX</td>
+      <td>in_1_hour</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.693257</td>
+      <td>2024-12-17 23:00:00</td>
+      <td>MCX Commodities</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>GOLD</td>
+      <td>MCX</td>
+      <td>in_daily</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.190292</td>
+      <td>2024-12-17 09:00:00</td>
+      <td>MCX Commodities</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>SILVER</td>
+      <td>MCX</td>
+      <td>in_1_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>1.575986</td>
+      <td>2024-12-17 23:54:00</td>
+      <td>MCX Commodities</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>SILVER</td>
+      <td>MCX</td>
+      <td>in_5_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.215852</td>
+      <td>2024-12-17 23:50:00</td>
+      <td>MCX Commodities</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>SILVER</td>
+      <td>MCX</td>
+      <td>in_15_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.702705</td>
+      <td>2024-12-17 23:45:00</td>
+      <td>MCX Commodities</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>SILVER</td>
+      <td>MCX</td>
+      <td>in_1_hour</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.687099</td>
+      <td>2024-12-17 23:00:00</td>
+      <td>MCX Commodities</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>SILVER</td>
+      <td>MCX</td>
+      <td>in_daily</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.925835</td>
+      <td>2024-12-17 09:00:00</td>
+      <td>MCX Commodities</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>CRUDEOIL</td>
+      <td>MCX</td>
+      <td>in_1_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.219571</td>
+      <td>2024-12-17 23:54:00</td>
+      <td>MCX Commodities</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>CRUDEOIL</td>
+      <td>MCX</td>
+      <td>in_5_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.214933</td>
+      <td>2024-12-17 23:50:00</td>
+      <td>MCX Commodities</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>CRUDEOIL</td>
+      <td>MCX</td>
+      <td>in_15_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.419545</td>
+      <td>2024-12-17 23:45:00</td>
+      <td>MCX Commodities</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>CRUDEOIL</td>
+      <td>MCX</td>
+      <td>in_1_hour</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.640351</td>
+      <td>2024-12-17 23:00:00</td>
+      <td>MCX Commodities</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>CRUDEOIL</td>
+      <td>MCX</td>
+      <td>in_daily</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.199525</td>
+      <td>2024-12-17 09:00:00</td>
+      <td>MCX Commodities</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>NATURALGAS</td>
+      <td>MCX</td>
+      <td>in_1_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>1.148677</td>
+      <td>2024-12-17 23:54:00</td>
+      <td>MCX Commodities</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td>NATURALGAS</td>
+      <td>MCX</td>
+      <td>in_5_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.268942</td>
+      <td>2024-12-17 23:50:00</td>
+      <td>MCX Commodities</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>62</th>
+      <td>NATURALGAS</td>
+      <td>MCX</td>
+      <td>in_15_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.237692</td>
+      <td>2024-12-17 23:45:00</td>
+      <td>MCX Commodities</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td>NATURALGAS</td>
+      <td>MCX</td>
+      <td>in_1_hour</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.682899</td>
+      <td>2024-12-17 23:00:00</td>
+      <td>MCX Commodities</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td>NATURALGAS</td>
+      <td>MCX</td>
+      <td>in_daily</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.205679</td>
+      <td>2024-12-17 09:00:00</td>
+      <td>MCX Commodities</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td>COPPER</td>
+      <td>MCX</td>
+      <td>in_1_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>1.125109</td>
+      <td>2024-12-17 23:54:00</td>
+      <td>MCX Commodities</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>66</th>
+      <td>COPPER</td>
+      <td>MCX</td>
+      <td>in_5_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.205874</td>
+      <td>2024-12-17 23:50:00</td>
+      <td>MCX Commodities</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td>COPPER</td>
+      <td>MCX</td>
+      <td>in_15_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>1.135499</td>
+      <td>2024-12-17 23:45:00</td>
+      <td>MCX Commodities</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>COPPER</td>
+      <td>MCX</td>
+      <td>in_1_hour</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.627473</td>
+      <td>2024-12-17 23:00:00</td>
+      <td>MCX Commodities</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td>COPPER</td>
+      <td>MCX</td>
+      <td>in_daily</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.201291</td>
+      <td>2024-12-17 09:00:00</td>
+      <td>MCX Commodities</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table><h3>COMEX Futures</h3><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>symbol</th>
+      <th>exchange</th>
+      <th>interval</th>
+      <th>status</th>
+      <th>data_points</th>
+      <th>response_time</th>
+      <th>latest_time</th>
+      <th>category</th>
+      <th>error</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>70</th>
+      <td>GC1!</td>
+      <td>COMEX</td>
+      <td>in_1_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.197031</td>
+      <td>2024-12-18 01:31:00</td>
+      <td>COMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>GC1!</td>
+      <td>COMEX</td>
+      <td>in_5_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.262502</td>
+      <td>2024-12-18 01:30:00</td>
+      <td>COMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>GC1!</td>
+      <td>COMEX</td>
+      <td>in_15_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.775217</td>
+      <td>2024-12-18 01:30:00</td>
+      <td>COMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>GC1!</td>
+      <td>COMEX</td>
+      <td>in_1_hour</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.725639</td>
+      <td>2024-12-18 01:30:00</td>
+      <td>COMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>GC1!</td>
+      <td>COMEX</td>
+      <td>in_daily</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.234679</td>
+      <td>2024-12-17 04:30:00</td>
+      <td>COMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td>SI1!</td>
+      <td>COMEX</td>
+      <td>in_1_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>1.079886</td>
+      <td>2024-12-18 01:31:00</td>
+      <td>COMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td>SI1!</td>
+      <td>COMEX</td>
+      <td>in_5_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>1.072412</td>
+      <td>2024-12-18 01:30:00</td>
+      <td>COMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>77</th>
+      <td>SI1!</td>
+      <td>COMEX</td>
+      <td>in_15_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.707663</td>
+      <td>2024-12-18 01:30:00</td>
+      <td>COMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td>SI1!</td>
+      <td>COMEX</td>
+      <td>in_1_hour</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.948753</td>
+      <td>2024-12-18 01:30:00</td>
+      <td>COMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>79</th>
+      <td>SI1!</td>
+      <td>COMEX</td>
+      <td>in_daily</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.186439</td>
+      <td>2024-12-17 04:30:00</td>
+      <td>COMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>80</th>
+      <td>HG1!</td>
+      <td>COMEX</td>
+      <td>in_1_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.373086</td>
+      <td>2024-12-18 01:31:00</td>
+      <td>COMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>81</th>
+      <td>HG1!</td>
+      <td>COMEX</td>
+      <td>in_5_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.247185</td>
+      <td>2024-12-18 01:30:00</td>
+      <td>COMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>82</th>
+      <td>HG1!</td>
+      <td>COMEX</td>
+      <td>in_15_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.701522</td>
+      <td>2024-12-18 01:30:00</td>
+      <td>COMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>83</th>
+      <td>HG1!</td>
+      <td>COMEX</td>
+      <td>in_1_hour</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.673014</td>
+      <td>2024-12-18 01:30:00</td>
+      <td>COMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>84</th>
+      <td>HG1!</td>
+      <td>COMEX</td>
+      <td>in_daily</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.192856</td>
+      <td>2024-12-17 04:30:00</td>
+      <td>COMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table><h3>NYMEX Futures</h3><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>symbol</th>
+      <th>exchange</th>
+      <th>interval</th>
+      <th>status</th>
+      <th>data_points</th>
+      <th>response_time</th>
+      <th>latest_time</th>
+      <th>category</th>
+      <th>error</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>85</th>
+      <td>CL1!</td>
+      <td>NYMEX</td>
+      <td>in_1_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.979793</td>
+      <td>2024-12-18 01:31:00</td>
+      <td>NYMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>86</th>
+      <td>CL1!</td>
+      <td>NYMEX</td>
+      <td>in_5_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.202646</td>
+      <td>2024-12-18 01:30:00</td>
+      <td>NYMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>87</th>
+      <td>CL1!</td>
+      <td>NYMEX</td>
+      <td>in_15_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.430386</td>
+      <td>2024-12-18 01:30:00</td>
+      <td>NYMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>88</th>
+      <td>CL1!</td>
+      <td>NYMEX</td>
+      <td>in_1_hour</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.889978</td>
+      <td>2024-12-18 01:30:00</td>
+      <td>NYMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>89</th>
+      <td>CL1!</td>
+      <td>NYMEX</td>
+      <td>in_daily</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.232328</td>
+      <td>2024-12-17 04:30:00</td>
+      <td>NYMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>90</th>
+      <td>NG1!</td>
+      <td>NYMEX</td>
+      <td>in_1_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.821115</td>
+      <td>2024-12-18 01:31:00</td>
+      <td>NYMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>91</th>
+      <td>NG1!</td>
+      <td>NYMEX</td>
+      <td>in_5_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.208452</td>
+      <td>2024-12-18 01:30:00</td>
+      <td>NYMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>92</th>
+      <td>NG1!</td>
+      <td>NYMEX</td>
+      <td>in_15_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.702136</td>
+      <td>2024-12-18 01:30:00</td>
+      <td>NYMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>93</th>
+      <td>NG1!</td>
+      <td>NYMEX</td>
+      <td>in_1_hour</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.874993</td>
+      <td>2024-12-18 01:30:00</td>
+      <td>NYMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>94</th>
+      <td>NG1!</td>
+      <td>NYMEX</td>
+      <td>in_daily</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.219071</td>
+      <td>2024-12-17 04:30:00</td>
+      <td>NYMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>95</th>
+      <td>RB1!</td>
+      <td>NYMEX</td>
+      <td>in_1_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.964006</td>
+      <td>2024-12-18 01:31:00</td>
+      <td>NYMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>96</th>
+      <td>RB1!</td>
+      <td>NYMEX</td>
+      <td>in_5_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.867889</td>
+      <td>2024-12-18 01:30:00</td>
+      <td>NYMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td>RB1!</td>
+      <td>NYMEX</td>
+      <td>in_15_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.811979</td>
+      <td>2024-12-18 01:30:00</td>
+      <td>NYMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>98</th>
+      <td>RB1!</td>
+      <td>NYMEX</td>
+      <td>in_1_hour</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.845249</td>
+      <td>2024-12-18 01:30:00</td>
+      <td>NYMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>99</th>
+      <td>RB1!</td>
+      <td>NYMEX</td>
+      <td>in_daily</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.250753</td>
+      <td>2024-12-17 04:30:00</td>
+      <td>NYMEX Futures</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table><h3>Binance Crypto</h3><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>symbol</th>
+      <th>exchange</th>
+      <th>interval</th>
+      <th>status</th>
+      <th>data_points</th>
+      <th>response_time</th>
+      <th>latest_time</th>
+      <th>category</th>
+      <th>error</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>100</th>
+      <td>BTCUSDT</td>
+      <td>BINANCE</td>
+      <td>in_1_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.306122</td>
+      <td>2024-12-18 01:42:00</td>
+      <td>Binance Crypto</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>101</th>
+      <td>BTCUSDT</td>
+      <td>BINANCE</td>
+      <td>in_5_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.312664</td>
+      <td>2024-12-18 01:40:00</td>
+      <td>Binance Crypto</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>102</th>
+      <td>BTCUSDT</td>
+      <td>BINANCE</td>
+      <td>in_15_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.233442</td>
+      <td>2024-12-18 01:30:00</td>
+      <td>Binance Crypto</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>103</th>
+      <td>BTCUSDT</td>
+      <td>BINANCE</td>
+      <td>in_1_hour</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.311478</td>
+      <td>2024-12-18 01:30:00</td>
+      <td>Binance Crypto</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>104</th>
+      <td>BTCUSDT</td>
+      <td>BINANCE</td>
+      <td>in_daily</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.580546</td>
+      <td>2024-12-17 05:30:00</td>
+      <td>Binance Crypto</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>105</th>
+      <td>ETHUSDT</td>
+      <td>BINANCE</td>
+      <td>in_1_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>1.573710</td>
+      <td>2024-12-18 01:42:00</td>
+      <td>Binance Crypto</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>106</th>
+      <td>ETHUSDT</td>
+      <td>BINANCE</td>
+      <td>in_5_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.356450</td>
+      <td>2024-12-18 01:40:00</td>
+      <td>Binance Crypto</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>107</th>
+      <td>ETHUSDT</td>
+      <td>BINANCE</td>
+      <td>in_15_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.193879</td>
+      <td>2024-12-18 01:30:00</td>
+      <td>Binance Crypto</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>108</th>
+      <td>ETHUSDT</td>
+      <td>BINANCE</td>
+      <td>in_1_hour</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.502323</td>
+      <td>2024-12-18 01:30:00</td>
+      <td>Binance Crypto</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>109</th>
+      <td>ETHUSDT</td>
+      <td>BINANCE</td>
+      <td>in_daily</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>1.088368</td>
+      <td>2024-12-17 05:30:00</td>
+      <td>Binance Crypto</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>110</th>
+      <td>BNBUSDT</td>
+      <td>BINANCE</td>
+      <td>in_1_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>1.338700</td>
+      <td>2024-12-18 01:42:00</td>
+      <td>Binance Crypto</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>111</th>
+      <td>BNBUSDT</td>
+      <td>BINANCE</td>
+      <td>in_5_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>1.227643</td>
+      <td>2024-12-18 01:40:00</td>
+      <td>Binance Crypto</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>112</th>
+      <td>BNBUSDT</td>
+      <td>BINANCE</td>
+      <td>in_15_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.610726</td>
+      <td>2024-12-18 01:30:00</td>
+      <td>Binance Crypto</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>113</th>
+      <td>BNBUSDT</td>
+      <td>BINANCE</td>
+      <td>in_1_hour</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.661535</td>
+      <td>2024-12-18 01:30:00</td>
+      <td>Binance Crypto</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>114</th>
+      <td>BNBUSDT</td>
+      <td>BINANCE</td>
+      <td>in_daily</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.277275</td>
+      <td>2024-12-17 05:30:00</td>
+      <td>Binance Crypto</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table><h3>Coinbase Crypto</h3><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>symbol</th>
+      <th>exchange</th>
+      <th>interval</th>
+      <th>status</th>
+      <th>data_points</th>
+      <th>response_time</th>
+      <th>latest_time</th>
+      <th>category</th>
+      <th>error</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>115</th>
+      <td>BTCUSD</td>
+      <td>COINBASE</td>
+      <td>in_1_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.405210</td>
+      <td>2024-12-18 01:42:00</td>
+      <td>Coinbase Crypto</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>116</th>
+      <td>BTCUSD</td>
+      <td>COINBASE</td>
+      <td>in_5_minute</td>
+      <td><span class="no_data">no_data</span></td>
+      <td>NaN</td>
+      <td>1.457066</td>
+      <td>NaN</td>
+      <td>Coinbase Crypto</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>117</th>
+      <td>BTCUSD</td>
+      <td>COINBASE</td>
+      <td>in_15_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.330336</td>
+      <td>2024-12-18 01:30:00</td>
+      <td>Coinbase Crypto</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>118</th>
+      <td>BTCUSD</td>
+      <td>COINBASE</td>
+      <td>in_1_hour</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.641955</td>
+      <td>2024-12-18 01:30:00</td>
+      <td>Coinbase Crypto</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>119</th>
+      <td>BTCUSD</td>
+      <td>COINBASE</td>
+      <td>in_daily</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.238238</td>
+      <td>2024-12-17 05:30:00</td>
+      <td>Coinbase Crypto</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>120</th>
+      <td>ETHUSD</td>
+      <td>COINBASE</td>
+      <td>in_1_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.351290</td>
+      <td>2024-12-18 01:42:00</td>
+      <td>Coinbase Crypto</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>121</th>
+      <td>ETHUSD</td>
+      <td>COINBASE</td>
+      <td>in_5_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>0.943464</td>
+      <td>2024-12-18 01:40:00</td>
+      <td>Coinbase Crypto</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>122</th>
+      <td>ETHUSD</td>
+      <td>COINBASE</td>
+      <td>in_15_minute</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>2.551400</td>
+      <td>2024-12-18 01:30:00</td>
+      <td>Coinbase Crypto</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>123</th>
+      <td>ETHUSD</td>
+      <td>COINBASE</td>
+      <td>in_1_hour</td>
+      <td><span class="error">error</span></td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Coinbase Crypto</td>
+      <td>timed out</td>
+    </tr>
+    <tr>
+      <th>124</th>
+      <td>ETHUSD</td>
+      <td>COINBASE</td>
+      <td>in_daily</td>
+      <td><span class="success">success</span></td>
+      <td>10.0</td>
+      <td>4.602029</td>
+      <td>2024-12-17 05:30:00</td>
+      <td>Coinbase Crypto</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table></body></html>
