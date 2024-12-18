@@ -3,7 +3,7 @@ Description=TradingView Data API Service
 After=network.target
 
 [Service]
-User=your_username
+User=root
 Group=your_username
 WorkingDirectory=/var/www/tvdata-api
 Environment="PATH=/var/www/tvdata-api/venv/bin"
