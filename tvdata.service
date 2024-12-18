@@ -3,8 +3,8 @@ Description=TradingView Data API Service
 After=network.target
 
 [Service]
-User=root
-Group=root
+User='root'
+Group='root'
 WorkingDirectory=/var/www/tvdata-api
 Environment="PATH=/var/www/tvdata-api/venv/bin"
 ExecStart=/var/www/tvdata-api/venv/bin/uvicorn api_server:app --host 0.0.0.0 --port 8000 --workers 4
