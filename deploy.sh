@@ -7,7 +7,7 @@ set -e
 APP_NAME="tvdata-api"
 APP_DIR="/var/www/$APP_NAME"
 PYTHON_VERSION="3.12"
-USERNAME="your_username"  # Replace with your Hostinger username
+USERNAME="root"  # Replace with your Hostinger username
 
 # Colors for output
 GREEN='\033[0;32m'
