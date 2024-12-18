@@ -62,7 +62,8 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
     sudo apt-get install -y certbot python3-certbot-nginx
-    read -p "Enter your domain name: " domain_name
+    domain_name="api.sarvkalyan.com"
+    echo -e "${GREEN}Setting up SSL for $domain_name...${NC}"
     sudo certbot --nginx -d $domain_name
 fi
 
@@ -73,8 +74,8 @@ sudo systemctl status tvdata
 
 # Print URLs
 echo -e "${GREEN}Your API is now available at:${NC}"
-echo "http://your_domain.com (HTTP)"
-echo "https://your_domain.com (HTTPS, if SSL was configured)"
+echo "http://api.sarvkalyan.com (HTTP)"
+echo "https://api.sarvkalyan.com (HTTPS, if SSL was configured)"
 echo -e "${GREEN}API Documentation available at:${NC}"
-echo "http://your_domain.com/docs"
-echo "http://your_domain.com/redoc" 
+echo "http://api.sarvkalyan.com/docs"
+echo "http://api.sarvkalyan.com/redoc"
